@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/Imagen/Icon/icono-favicon-portafolio-difital.jpg">
+
+
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+    <!-- Backdrop y texto centrado -->
+    <div class="backdrop" id="backdrop">
+        <div class="backdrop-texto" id="backdrop-texto">
+            <div class="texto-container">
+                <p class="hola">Hola</p>
+                <h1 id="saludo"></h1>
+                <p class="Bienvenido">Bienvenido a mi portafolio, haz click en cualquier parte de la pantalla para
+                    continuar.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección del Menú -->
+    <div class="menu">
+        <header class="menu__encabezado">
+            <h3 class="menu__titulo">Sebastián Sosa</h3>
+        </header>
+        <nav>
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" onclick="toggleSidebar()">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+            <ul class="menu__lista">
+                <li class="menu__lista__item"><a href="#sobre-mi">Sobre mi</a></li>
+                <li class="menu__lista__item"><a href="#Habilidades">Habilidades</a></li>
+                <li class="menu__lista__item"><a href="#Pasatiempos">Pasatiempos</a></li>
+                <li class="menu__lista__item"><a href="#formacion">Formación</a></li>
+                <li class="menu__lista__item"><a href="#xp">Proyectos</a></li>
+                <li class="menu__lista__item"><a href="#contacto">Contacto</a></li>
+                <li class="menu__lista__item"><a href="#InfoSeb-News">InfoSeb News</a></li>
+            </ul>
+
+
+            <div id="sidebar">
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                    <li><a href="#Pasatiempos">Pasatiempos</a></li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#xp">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#InfoSeb-News">InfoSeb News</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="Video">
+        <video id="miVideo" autoplay loop muted>
+            <source src="assets/Video/promoEncriptador.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+
+
+    <!-- Sección del Header/Title/Hero -->
+    <section class="titulo" id="sobre-mi">
+        <div class="titulo__div">
+            <img class="titulo__perfil" src="assets/Imagen/Perfil/perfil.png" alt="Descripción de la imagen">
+
+
+            <div class="titulo__contenedor">
+                <h2 class="titulo__bio">Hola, Bienvenido a mi portafolio</h2>
+                <p class="titulo__subseccion">Aquí encontrarás una muestra de algunos de mis proyectos más recientes.
+                    Cada proyecto representa un desafío único que abordé con entusiasmo y creatividad, puede que no estén perfectos aún, pero con mucha dedicación pronto lo estarán.</p>
+                <ul class="titulo__redes">
+                    <!-- Pon los enlaces de tus redes sociales favoritas -->
+                    <li class="titulo__redes__item"><a href="https://github.com/Overkills01">Github <img
+                                src="assets\arrow.png" alt=""></a></li>
+                    <li class="titulo__redes__item"><a
+                            href="https://www.linkedin.com/in/sebastian-sosa-35657030a/">Linkedin <img
+                                src="assets\arrow.png" alt=""></a></li>
+                    <li class="titulo__redes__item"><a href="https://www.instagram.com/trouble_023/">Instagram <img src="assets\arrow.png" alt=""></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección sobre mi -->
+    <section class="acerca">
+        <div class="acerca__contenedor">
+            <h3 class="acerca__titulo">Sobre mi</h3>
+            <p>Desde temprana edad, mi fascinación por el dibujo y la música era evidente para todos los que me
+                conocían. Aunque las oportunidades no siempre estuvieron de mi lado, mi determinación nunca flaqueó.</p>
+
+            <p>Mi habilidad para el arte de la observación se convirtió en mi mayor fortaleza, permitiéndome crear
+                dibujos que sorprendían por su detalle y expresión. Esta destreza me llevó a explorar el mundo del
+                modelado 3D, donde descubrí una nueva forma de dar vida a mis creaciones.</p>
+
+            <p>Apasionado por la música y el arte en todas sus formas, decidí dar un giro en mi vida y sumergirme en el
+                estudio de la programación. Este nuevo camino abriría las puertas a un mundo completamente diferente,
+                uno de códigos y posibilidades infinitas.</p>
+
+            <p>Lo que alguna vez pareció tan lejano, ahora estaba al alcance de mi mano. HTML, CSS y JavaScript se
+                convirtieron en mis herramientas diarias, y cada línea de código era un paso más cerca hacia mis sueños.
+                Con dedicación y esfuerzo, encontré en la programación una nueva forma de expresión artística,
+                fusionando mi amor por el arte visual con el mundo digital.</p>
+            <img class="Firma" src="assets/Imagen/Firma/signature2.png" alt="Firma">
+        </div>
+    </section>
+
+
+    <!-- Sección de Habilidades -->
+    <section class="galeria" id="Habilidades">
+        <h3 class="galeria__titulo">Habilidades</h3>
+        <div class="galeria__imagenes">
+            <div class="imagen" data-text="HTML"><img src="assets/Imagen/Icon/HTML.svg"
+                    alt="Descripción de la imagen 1"></div>
+            <div class="imagen" data-text="CSS"><img src="assets/Imagen/Icon/CSS.svg" alt="Descripción de la imagen 2">
+            </div>
+            <div class="imagen" data-text="JS"><img src="assets/Imagen/Icon/JS.svg" alt="Descripción de la imagen 3">
+            </div>
+
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sección de Pasatiempos -->
+    <section class="galeriaPasatimepos" id="Pasatiempos">
+        <h3 class="galeriaPasatimepos__titulo">Pasatiempos</h3>
+        <div class="galeriaPasatimepos__imagenes">
+            <div class="imagen2" data-text="Tocar Guitarra"><img
+                    src="assets/Imagen/Pasatiempos/male-play-guitar-in-liminal-space-1.jpg"
+                    alt="Descripción de la imagen 1"></div>
+            <div class="imagen2" data-text="Tocar Piano"><img src="assets/Imagen/Pasatiempos/piano.jpg"
+                    alt="Descripción de la imagen 2"></div>
+            <div class="imagen2" data-text="Ver Series"><img src="assets/Imagen/Pasatiempos/anime-girl-painting.png"
+                    alt="Descripción de la imagen 3"></div>
+            <div class="imagen2" data-text="Videojuegos"><img
+                    src="assets/Imagen/Pasatiempos/controller-with-a-modern-gamer.jpeg"
+                    alt="Descripción de la imagen 1"></div>
+            <div class="imagen2" data-text="Dibujo Digital"><img
+                    src="assets/Imagen/Pasatiempos/digital drawing.jpg" alt="Descripción de la imagen 2"></div>
+            <div class="imagen2" data-text="Tomar Fotos"><img src="assets/Imagen/Pasatiempos/photo city.jpg"
+                    alt="Descripción de la imagen 3"></div>
+            <div class="imagen2" data-text="Stop Motion"><img src="assets/Imagen/Pasatiempos/poor-stop-motion1.jpg"
+                    alt="Descripción de la imagen 3"></div>
+            <div class="imagen2" data-text="Escribir Historias"><img
+                    src="assets/Imagen/Pasatiempos/imagine-a-book-cover-1.jpg" alt="Descripción de la imagen 3"></div>
+
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </section>
+
+
+
+    <!-- Sección de Formación académica -->
+    <section class="galeriaAcademico" id="formacion">
+        <h3 class="galeriaAcademico__titulo">Formación académica</h3>
+        <div class="galeriaAcademico__imagenes">
+            <div class="imagen3" data-text="ONE - Oracle Next Education 2024"><img
+                    src="assets/Imagen/Formacion/one-800x450.png" alt="Descripción de la imagen 1"></div>
+
+
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia Profesional/Proyectos -->
+    <section class="experiencia" id="xp">
+        <h2 class="experiencia__seccion__titulo">Experiencia Profesional</h2>
+        <div class="experiencia__caja">
+            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            <img class="experiencia__img" src="assets/Imagen/Experiencia/decod_print.jpg" alt="">
+            <div class="experiencia__info">
+                <h2 class="experiencia__titulo">Encriptador de texto</h2>
+                <h3 class="experiencia__texto">Challenge Alura Codificador</h3>
+                <div class="experiencia__descripcion">
+                    <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                    <span class="experiencia__repo"><a
+                            href="https://github.com/Overkills01/Encriptador-de-texto"><button
+                                class="experiencia__boton--repo">Repositorio</button></a></span>
+                    <span class="experiencia__demo"><a href=" https://overkills01.github.io/Encriptador-de-texto/"><button class="experiencia__boton--demo">Ver
+                                demo</button></a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="experiencia__caja">
+            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+            <img class="experiencia__img" src="assets/Imagen/Experiencia/decod_print2.jpg" alt="">
+            <div class="experiencia__info">
+                <h2 class="experiencia__titulo">Conversor de Divisas y Temperatura</h2>
+                <h3 class="experiencia__texto">Challenge Oracle</h3>
+                <div class="experiencia__descripcion">
+                    <!-- Pon el enlace del proyecto en Github o GithubPages -->
+                    <span class="experiencia__repo"><a
+                            href="https://github.com/Overkills01/ConversorDivisas"><button
+                                class="experiencia__boton--repo">Repositorio</button></a></span>
+                    <span class="experiencia__demo"><a href=" https://overkills01.github.io/ConversorDivisas/"><button class="experiencia__boton--demo">Ver
+                                demo</button></a></span>
+                </div>
+            </div>
+        </div>
+
+       
+
+       
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="formulario-contacto" id="contacto">
+        <div class="formulario-contacto__contacto">
+            <div class="formulario-contacto--izquierda">
+                <img class="formulario-contacto__img" src="assets\contact_image0.png" alt="">
+            </div>
+            
+            <div class="formulario-contacto__texto">
+                <h2 class="formulario-contacto__titulo">¿Quieres contactarme?</h2>
+                <!--<h3 class="formulario-contacto__subtexto">¿Quieres contactarme?</h3>-->
+                <p class="formulario-contacto__subtexto">Complete el siguiente formulario y me pondré en contacto con
+                    usted lo antes posible.</p>
+                <form class="formulario-contacto__form" name="form">
+                    <input class="formulario-contacto__input" type="text" name="nombre" placeholder="Nombre" pattern="[a-zA-Z]{3,14}" title="El nombre debe tener entre 3 y 14 letras" maxlength="14" required>
+
+
+                    <input class="formulario-contacto__input" type="email" name="email"
+                        placeholder="Ejemplo@dominio.com" 
+                        required>
+                        <input class="formulario-contacto__input" type="text" name="asunto" placeholder="Asunto" pattern=".{6,14}" title="Debe tener entre 6 y 14 caracteres. Por ejemplo: 'empleo'" required>
+
+                    <textarea class="formulario-contacto__textarea" rows="5" cols="40" id="mensaje" name="mensaje"
+                        placeholder="Mensaje (máximo 100 palabras)" required></textarea>
+                    <p id="contadorPalabras" class="contador-palabras">0 palabras</p>
+                    <p id="mensajeInformativo" class="error-message"></p>
+
+
+
+                    <div id="mensajeInformativo" class="formulario-contacto__mensaje-informativo"></div>
+                    <!-- Casilla de confirmación -->
+                    <div class="formulario-contacto__confirmacion">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Al hacer click acepto los Términos y Condiciones</label>
+                    </div>
+                    <button type="submit" class="formulario-contacto__boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Icono de flecha animado -->
+    <div class="icono-flecha" id="icono-flecha">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </div>
+
+
+
+
+
+    <!-- Sección de Footer -->
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <div class="columnas">
+                <div class="columna">
+                    <h3>Acceso rápido</h3>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre mí</a></li>
+                        <li><a href="#Pasatiempos">Pasatiempos</a></li>
+                        <li><a href="#xp">Experiencia</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3>Más info</h3>
+                    <p>Dirección: Godoy Cruz, Mendoza, Argentina</p>
+                    <p>Teléfono: No Disponible</p>
+                    <p>Email: sebastian.solutions01@gmail.com
+                    </p>
+                </div>
+                <div class="columna">
+                    <h3>Redes Sociales</h3>
+                    <ul class="redes-sociales">
+                        <li><a href="https://github.com/Overkills01"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/sebastian-sosa-35657030a/"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/trouble_023/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir actualizaciones sobre nuevos proyectos.</p>
+                    <form action="#" method="post" class="formulario">
+                        <input type="email" name="email" placeholder="Ejemplo@dominio.com" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="pie-pagina__final">
+                <p class="Created">© 2024 Creado por Sebastián Sosa.</p>
+            </div>
+        </div>
+        <div class="news-ticker" id="InfoSeb-News">
+            <ul class="ticker-list" id="ticker-list">
+                <li class="ticker-item"><b>InfoSeb News:</b> La encriptación de mensajes gana popularidad entre las
+                    personas preocupadas por la seguridad de sus comunicaciones en línea. <a href="https://overkills01.github.io/Encriptador-de-texto/"
+                        style="color: #ff6600; text-decoration: underline;">Prueba aquí</a></li>
+                <li class="ticker-item"><b>InfoSeb News:</b> ¡Descubre Alura Geek, tu próximo destino para comprar y vender con estilo! Prepárate para sumergirte en una experiencia emocionante y divertida de comercio electrónico. Aquí podrás darle una segunda vida a esos artículos que ya no usas, ¡y obtener el mejor precio en el mercado! Próximamente.</li>
+                
+                <li class="ticker-item"><b>InfoSeb News:</b> ¡No hagas click aquí bajo ninguna circunstancia!<a href="#"
+                        id="glitch-button" style="color: #ff6600; text-decoration: underline;">No le hagas caso y tócame!</a></li>
+            </ul>
+        </div>
+        <!-- Icono de flecha animado para cerrar el sidebar -->
+        <div class="icono-flecha1 hidden" id="icono-flecha1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </div>
+
+        <div id="glitch-container">
+            <!-- Aquí puedes agregar cualquier contenido adicional -->
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
