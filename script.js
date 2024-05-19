@@ -294,9 +294,9 @@ document.body.addEventListener('click', function(event) {
 });
 
 window.addEventListener('scroll', function(event) {
-    if (sidebarOpen) {
-        event.preventDefault();
-        event.stopPropagation();
+    const sidebar = document.getElementById('sidebar');
+    if (sidebarOpen && event.target !== sidebar) {
+        toggleSidebar();
     }
 });
 
@@ -312,33 +312,10 @@ function toggleSidebar() {
     const iconoFlecha1 = document.getElementById('icono-flecha1');
     iconoFlecha1.classList.toggle('visible', sidebarOpen); 
     iconoFlecha1.classList.toggle('rotating', sidebarOpen); 
-    
-    // Bloquea/desbloquea el scroll de la página
-    if (sidebarOpen) {
-        disableScroll();
-    } else {
-        enableScroll();
-    }
 }
 
-function disableScroll() {
-    // Calcula el ancho del scroll de la ventana
-    const scrollWidth = window.innerWidth - document.documentElement.clientWidth;
 
-    // Añade padding derecho para compensar el ancho del scroll y evitar que el contenido se desplace horizontalmente
-    document.body.style.paddingRight = scrollWidth + 'px';
 
-    // Bloquea el scroll de la ventana
-    document.body.style.overflow = 'hidden';
-}
-
-function enableScroll() {
-    // Elimina el padding derecho añadido
-    document.body.style.paddingRight = '';
-
-    // Restaura el scroll de la ventana
-    document.body.style.overflow = '';
-}
 
 
 
