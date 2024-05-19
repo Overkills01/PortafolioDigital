@@ -191,7 +191,8 @@ body.sidebar-open .icono-flecha1 {
     top: 0;
     right: -400px;
     width: 300px;
-    height: 100vh;
+    height: 100%;
+    overflow-y: auto;
     background-color: #3f3f3f;
     color: white;
     transition: right 0.3s;
