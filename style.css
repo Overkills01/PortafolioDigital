@@ -186,7 +186,7 @@ body.sidebar-open .icono-flecha1 {
 
 
 /* Estilos para el sidebar */
-#sidebar {
+#sidebar { 
     position: fixed;
     top: 0;
     right: -400px;
