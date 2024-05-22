@@ -365,7 +365,7 @@ document.getElementById('glitch-button').addEventListener('click', function(even
   // Después de 10 segundos, volver a la imagen y video originales
   setTimeout(function() {
     document.querySelector('.formulario-contacto__img').src = 'assets/contact_image.png'; 
-    document.querySelector('.titulo__perfil').src = 'assets/Imagen/Perfil/perfil.png'; 
+    document.querySelector('.titulo__perfil').src = ''; 
     document.getElementById('miVideo').src = 'assets/Video/promoEncriptador.mp4'; 
     document.body.classList.remove('glitch-effect');
     document.getElementById('glitch-container').classList.remove('glitch-effect');
